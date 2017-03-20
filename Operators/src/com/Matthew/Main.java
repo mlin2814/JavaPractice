@@ -48,9 +48,38 @@ public class Main {
         if (topScore < 100)
             System.out.println("Top Score!");
 
-        int altTopScore = 60;
-        if (topScore > altTopScore && topScore<100)
+        int altTopScore = 81;
+        if ((topScore > altTopScore) && (topScore<100))
             System.out.println("Greater than top score and less than 100");
+
+        if((topScore > 90) || (altTopScore <= 90))
+            System.out.println("One of these tests is true");
+
+        int newValue = 50;
+        if (newValue == 50)
+            System.out.println("All good!");
+
+        boolean isCar = false;
+        if (isCar == true)
+            System.out.println("Wrong!");
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar)
+        System.out.println("Is true");
+
+        double firstVal = 20d;
+        double secondVal = 80d;
+
+        double total = (firstVal + secondVal) * 25;
+        System.out.println(total);
+
+        double total = total % 40;
+        System.out.println(total);
+
+        if (total<= 20)
+            System.out.println("Total was over the limit");
+
 
     }
 }
