@@ -74,10 +74,10 @@ public class Main {
         double total = (firstVal + secondVal) * 25;
         System.out.println(total);
 
-        double total = total % 40;
+        double newtotal = total % 40;
         System.out.println(total);
 
-        if (total<= 20)
+        if (newtotal<= 20)
             System.out.println("Total was over the limit");
 
 
