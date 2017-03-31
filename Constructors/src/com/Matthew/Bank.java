@@ -10,6 +10,20 @@ public class Bank {
     private String email;
     private String phone;
 
+    public Bank(){
+        this(456, 20.00, "Mike", "mike@mike.com", "1234567891");
+        System.out.println("Empty constructor called");
+    }
+
+    public Bank(int account, double balance, String name, String email, String phone ){
+        System.out.println("Constructor parameters called");
+        this.account = account;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+
     public void setAccount(int account){
         this.account = account;
     }
