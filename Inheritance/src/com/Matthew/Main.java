@@ -9,5 +9,6 @@ public class Main {
         dog.eat();
         dog.walk();
         dog.run();
+        System.out.println(dog.getName());
     }
 }
