@@ -33,5 +33,14 @@ public class Main {
         hamburger.addHamburgerAddition2("Lettuce", 0.75);
         hamburger.addHamburgerAddition3("Cheese", 1.12);
         System.out.println(hamburger.itemizeHamburger());
+
+        Healthy healthy = new Healthy("Bacon", 5.67);
+        healthy.addHealth1("Egg", 5.43);
+        healthy.addHealth2("Lentils", 3.41);
+        System.out.println(healthy.itemizeHamburger());
+
+        Deluxe deluxe = new Deluxe();
+        deluxe.itemizeHamburger();
+        System.out.println(deluxe.itemizeHamburger());
     }
 }
